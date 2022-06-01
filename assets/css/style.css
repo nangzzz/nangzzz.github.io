@@ -2,13 +2,12 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family:  "Poppins", sans-serif;
     text-decoration: none;
-    font-family: poppins, sans-serif
+    font-family: 'Shippori Antique', sans-serif;
 }
 
 .max-width {
-    max-width: 1300px;
+    width: 100%;
     padding: 0 80px;
     margin: auto;
 }
@@ -34,7 +33,7 @@
 }
 
 .navbar .brand a span {
-    margin-left: 15px;
+    margin-left: 10px;
     color: #4ecca3;
 }
 
@@ -53,7 +52,7 @@
 
 .navbar .menu-list li a:hover{
     color: #4ecca3;
-    transition: color 1s ease;
+    transition: color 0,3s ease;
 }
 
 /* home setting */
@@ -101,6 +100,7 @@
 }
 
 .button {
+    display: inline-block;
     margin-top: 30px;
     background-color: #4ecca3;
     padding: 10px;
@@ -127,4 +127,32 @@
 .button a { 
     color: #232931;
     font-weight: 600;
+    transition: color 0,3 ease;
 }
+
+.button a:hover{
+    color: #eeeeee;
+}
+
+/* about setting */
+.about {
+    background: #eeeeee;
+    height: 100vh;
+    color: #232931;
+}
+.about-content{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-content .first-info {
+    width: 45%;
+}
+
+.about-content .sec-info {
+    width: 45%;
+}
+/* responsive start */
