@@ -229,16 +229,20 @@
     transition: all 0.3s ease-out;
   }
 
-  .about .about-content .sec-info .sosmed-btn:nth-child(3) span{
+  .about .about-content .sec-info .sosmed-btn span a {
+    text-decoration: none;
+  }
+
+  .about .about-content .sec-info .sosmed-btn:nth-child(3) span a {
     color: #E1306C;
   }
-  .about .about-content .sec-info .sosmed-btn:nth-child(4) span{
+  .about .about-content .sec-info .sosmed-btn:nth-child(4) span a {
     color: #3b5998;
   }
-  .about .about-content .sec-info .sosmed-btn:nth-child(5) span{
+  .about .about-content .sec-info .sosmed-btn:nth-child(5) span a {
     color: #333;
   }
-  .about .about-content .sec-info .sosmed-btn:nth-child(6) span{
+  .about .about-content .sec-info .sosmed-btn:nth-child(6) span a {
     color: #0088cc;
   }
 /* responsive start */
