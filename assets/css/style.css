@@ -141,6 +141,7 @@ body{
 
   .skill .skill-container{
     font-size: 5rem;
+    margin-top: 1rem;
   }
 
     .skill-container .icon-skill{
@@ -150,27 +151,13 @@ body{
       filter: grayscale(100%);
     }
 
-    .skill-container .icon-skill:hover:nth-child(1){
-      color: #E34C26;
+    .skill-container .icon-skill:hover{
       opacity: 1;
       filter: none;
     }
 
-    .skill-container .icon-skill:hover:nth-child(2){
-      color: #264DE4;
-      opacity: 1;
-      filter: none;
-    }
-
-    .skill-container .icon-skill:hover:nth-child(3){
-      color: #F0DB4F;
-      opacity: 1;
-      filter: none;
-    }
-
-    .skill-container .icon-skill:hover:nth-child(4){
-      opacity: 1;
-      filter: none;
+    .skill-container .icon-skill img{
+      width: 100px;
     }
 
 .project{
