@@ -131,3 +131,12 @@ body{
       font-size: 1.5rem;
       color: #F2F2F2;
     }
+
+    .skill .skill-container{
+      font-size: 5rem;
+    }
+
+    .skill-container .icon-skill{
+      text-decoration: none;
+      color: #F2F2F2;
+    }
