@@ -104,6 +104,30 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   height: 100vh;
+  padding: 1rem;
 }
+
+  .about .left-content{
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .about .left-content p{
+    text-align: justify;
+  }
+
+  .about .right-content{
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .right-content a{
+    text-decoration: none;
+  }
+
+    .right-content .icon-social{
+      font-size: 1.5rem;
+      color: #F2F2F2;
+    }
