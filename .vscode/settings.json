@@ -1,4 +1,4 @@
 {
-    "workbench.settings.useSplitJSON": true,
-    "workbench.settings.editor": "json"
+    "files.autoSave": "onWindowChange",
+    "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace"
 }

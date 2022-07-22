@@ -136,6 +136,18 @@ body{
       font-size: 5rem;
     }
 
+    .skill-container:hover:nth-child(1){
+      color: #E34C26;
+    }
+
+    .skill-container:hover:nth-child(2){
+      color: #264DE4;
+    }
+
+    .skill-container:hover:nth-child(3){
+      color: #F0DB4F;
+    }
+
     .skill-container .icon-skill{
       text-decoration: none;
       color: #F2F2F2;
