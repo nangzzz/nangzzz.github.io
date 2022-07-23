@@ -106,46 +106,82 @@ body{
 
 .about{
   background: #F2F2F2;
-  color: #222629;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 88vh;
-  padding: 1rem;
-}
-
-  .about .left-content{
-    width: 50%;
-    padding: 1rem;
-  }
-
-  .about .left-content p{
-    text-align: justify;
-  }
-
-  .about .right-content{
-    width: 50%;
-    padding: 1rem;
-  }
-
-  .right-content a{
-    text-decoration: none;
-  }
-
-    .right-content .icon-social{
-      font-size: 1.5rem;
-      color: #F2F2F2;
-    }
-
-.skill{
-  color: #F2F2F2;
+  color: #0e2431;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
+  padding: 1rem;
 }
+
+.about .head-content{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 12vh;
+}
+
+  .about .head-content h1{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+    .head-content h1 span{
+      color: #4a00e0;
+    }
+
+  .about .main-content{
+    display: flex;
+  }
+
+    .main-content .left-content{
+      width: 50%;
+      padding: 1rem;
+    }
+
+      .left-content p{
+        text-align: justify;
+      }
+
+    .main-content .right-content{
+      width: 50%;
+      padding: 1rem;
+    }
+
+      .right-content a{
+        text-decoration: none;
+      }
+
+      .right-content .icon-social{
+        font-size: 1.5rem;
+        color: #0e2431;
+        margin: 0 1rem;
+      }
+
+.skill{
+  color: #ffffff;
+  background: #4a00e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding-top: 13vh;
+}
+
+  .skill h1{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .skill h1 span{
+    color: #ffe600;
+  }
+
+  .skill p{
+    font-size: 1rem;
+  }
 
   .skill .skill-container{
     font-size: 5rem;
@@ -169,10 +205,19 @@ body{
     }
 
 .project{
-  color: #F2F2F2;
+  color: #0e2431;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
+  padding-top: 13vh;
 }
+
+  .project h1{
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  .project p{
+    font-size: 1rem;
+  }
