@@ -56,6 +56,12 @@ body{
         font-size: 1.25rem;
       }
 
+      .navigation ul .nav-icon.active,
+      .navigation ul .nav-icon:hover{
+      color: #4a00e0;
+      border-bottom: 0.2rem solid #4a00e0;
+      }
+
 .home{
   position: relative;
   color: #002057;
@@ -76,12 +82,12 @@ body{
     font-weight: 800;
   }
 
-  .home h1 span{
-    color: #ff7b00;
-  }
+    .home h1 span{
+      color: #ff7b00;
+    }
 
   .home a{
-    background: #2506AD;
+    background: #4a00e0;
     font-weight: bolder;
     text-decoration: none;
     color: #F2F2F2;
@@ -95,7 +101,7 @@ body{
   .home a:hover{
     background: transparent;
     color: #0e2431;
-    border: 1px solid #2506AD;
+    border: 1px solid #4a00e0;
   }
 
   @keyframes bounce {
