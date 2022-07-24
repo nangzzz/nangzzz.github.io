@@ -37,7 +37,7 @@ body{
   }
 
     .logo img{
-      width: 100px;
+      width: 50px;
     }
 
   .header .navigation{
@@ -316,7 +316,7 @@ body{
 
   /* Responsive Home Start */
   .home{
-
+    padding: 0.5rem;
   }
   /* Responsive Home End */
 }
