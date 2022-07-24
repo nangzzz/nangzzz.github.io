@@ -154,7 +154,6 @@ body{
   .about .main-content{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
   }
 
     .main-content .top-content{
@@ -182,7 +181,7 @@ body{
 
     .main-content .bottom-content{
       width: 100%;
-      padding: 1rem;
+      margin-top: 1rem;
     }
 
       .bottom-content a{
@@ -203,6 +202,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
   height: 100vh;
   padding-top: 13vh;
 }
@@ -248,6 +248,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem;
   height: 100vh;
   padding-top: 13vh;
 }
@@ -319,5 +320,23 @@ body{
     padding: 0.5rem;
   }
   /* Responsive Home End */
+
+  /* Responsive About Start */
+  .about{
+    padding: 0.5rem;
+  }
+  /* Responsive About End */
+  
+  /* Responsive Skills Start */
+  .skill{
+    padding: 0.5rem;
+  }
+  /* Responsive Skills End */
+
+  /* Responsive Project Start */
+  .skill{
+    padding: 0.5rem;
+  }
+  /* Responsive Project End */
 }
 /* Responsive Web End */
