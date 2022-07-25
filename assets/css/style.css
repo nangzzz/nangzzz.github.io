@@ -133,23 +133,22 @@ body{
   padding: 1rem 5rem;
 }
 
-.about .head-content{
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 100%;
-  /* padding: 1rem; */
-  margin-top: 12vh;
-}
-
-  .about .head-content h1{
-    font-size: 2rem;
-    font-weight: 800;
+  .about .head-content{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    margin-top: 12vh;
   }
 
-    .head-content h1 span{
-      color: #4a00e0;
+    .head-content h1{
+      font-size: 2rem;
+      font-weight: 800;
     }
+
+      .head-content h1 span{
+        color: #4a00e0;
+      }
 
   .about .main-content{
     display: flex;
@@ -163,22 +162,22 @@ body{
       width: 100%;
     }
 
-    .top-content h1{
-    text-align: left;
-    width: 100%;
-    }
+      .top-content h1{
+        text-align: left;
+        width: 100%;
+      }
 
-    .top-content h1 span{
-      color: #ff7b00;
-    }
+      .top-content h1 span{
+        color: #ff7b00;
+      }
 
-    .top-content h2{
-      width: 100%;
-      text-align: left;
-      font-size: 1rem;
-      font-weight: 600;
-      width: 100%;
-    }
+      .top-content h2{
+        width: 100%;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 600;
+        width: 100%;
+      }
 
       .top-content p{
         text-align: justify;
@@ -190,16 +189,8 @@ body{
       flex-direction: column;
       align-items: flex-start;
       width: 100%;
-      margin-left: 1rem;
+      padding-left: 5rem;
     }
-
-      .bottom-content h1{
-
-      }
-    
-      .bottom-content p{
-
-      }
 
       .bottom-content a{
         text-decoration: none;
@@ -218,11 +209,12 @@ body{
 
 /* Skill Section Start */
 .skill{
-  color: #ffffff;
-  background: #4a00e0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  color: #ffffff;
+  background: #4a00e0;
   padding: 1rem;
 }
 
@@ -232,9 +224,9 @@ body{
     margin-top: 13vh;
   }
 
-  .skill h1 span{
-    color: #ffe600;
-  }
+    .skill h1 span{
+      color: #ffe600;
+    }
 
   .skill p{
     font-size: 1rem;
@@ -258,7 +250,7 @@ body{
     }
 
     .skill-container .icon-skill img{
-      width: 7rem;
+      width: 5rem;
     }
 /* Skill Section End */
 
@@ -346,9 +338,14 @@ body{
     padding: 0.5rem;
   }
 
-  .top-content .left-content img {
-    width: 100%;
+  .about .main-content{
+    display: flex;
+    flex-direction: column;
   }
+
+    .main-content .bottom-content{
+      padding: 2rem 0 0 0;
+    }
   /* Responsive About End */
   
   /* Responsive Skills Start */
