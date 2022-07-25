@@ -212,6 +212,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   height: 100vh;
   color: #ffffff;
   background: #4a00e0;
@@ -352,10 +353,20 @@ body{
   .skill{
     padding: 0.5rem;
   }
+
+
+  .skill .skill-container{
+    font-size: 5rem;
+    margin-top: 1rem;
+  }
+
+  .skill-container .icon-skill img{
+    width: 20%;
+  }
   /* Responsive Skills End */
 
   /* Responsive Project Start */
-  .skill{
+  .project{
     padding: 0.5rem;
   }
   /* Responsive Project End */
