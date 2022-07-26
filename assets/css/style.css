@@ -138,7 +138,7 @@ body{
     align-items: center;
     justify-content: left;
     width: 100%;
-    margin-top: 12vh;
+    margin-top: 5rem;
   }
 
     .head-content h1{
@@ -222,7 +222,7 @@ body{
   .skill h1{
     font-size: 2rem;
     font-weight: 800;
-    margin-top: 13vh;
+    margin-top: 5rem;
   }
 
     .skill h1 span{
@@ -268,7 +268,7 @@ body{
   .project h1{
     font-size: 2rem;
     font-weight: 800;
-    margin-top: 13vh;
+    margin-top: 5rem;
   }
 
   .project p{
@@ -330,13 +330,13 @@ body{
 
   /* Responsive Home Start */
   .home{
-    padding: 0.5rem;
+    padding: 1rem;
   }
   /* Responsive Home End */
 
   /* Responsive About Start */
   .about{
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   .about .main-content{
@@ -351,7 +351,7 @@ body{
   
   /* Responsive Skills Start */
   .skill{
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
 
@@ -367,7 +367,7 @@ body{
 
   /* Responsive Project Start */
   .project{
-    padding: 0.5rem;
+    padding: 1rem;
   }
   /* Responsive Project End */
 }
