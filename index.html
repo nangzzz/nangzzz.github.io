@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'open': ['Open Sans', sans-serif;],
+                    },
+                }
+            }
+        }
+    </script>
     <title>Portfolio | Danang Satria</title>
 </head>
-
-<body>
+<body class="font-open">
     <nav>
         <div class="flex items-center justify-between fixed bg-white w-full h-16 px-12">
             <div class="py-2">
@@ -20,16 +33,16 @@
             </div>
             <div class="navigation">
                 <ul class="flex">
-                    <li class="mx-4"><a href="#beranda" class="text-xl font-medium"><i class="fa-solid fa-house"></i> beranda</a></li>
-                    <li class="mx-4"><a href="#tentang" class="text-xl font-medium"><i class="fa-solid fa-user"></i> tentang</a></li>
-                    <li class="mx-4"><a href="#kemampuan" class="text-xl font-medium"><i class="fa-solid fa-code"></i> kemampuan</a></li>
-                    <li class="mx-4"><a href="#proyek" class="text-xl font-medium"><i class="fa-solid fa-diagram-project"></i> proyek</a></li>
+                    <li class="mx-4"><a href="#beranda" class="text-xl font-medium capitalize"><i class="fa-solid fa-house"></i> beranda</a></li>
+                    <li class="mx-4"><a href="#tentang" class="text-xl font-medium capitalize"><i class="fa-solid fa-user"></i> tentang</a></li>
+                    <li class="mx-4"><a href="#kemampuan" class="text-xl font-medium capitalize"><i class="fa-solid fa-code"></i> kemampuan</a></li>
+                    <li class="mx-4"><a href="#proyek" class="text-xl font-medium capitalize"><i class="fa-solid fa-diagram-project"></i> proyek</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="flex flex-col items-center justify-center h-screen" id="beranda">
+    <section class="flex flex-col items-center justify-center h-screen bg-stone-100" id="beranda">
         <h3 class="text-2xl">Halo pemirsa, saya</h3>
         <h1 class="text-5xl">Danang <span>Satria</span></h1>
         <p class="text-base">Mahasiswa | Frontend Developer</p>
@@ -37,7 +50,7 @@
         <a href="#tentang" class="button">Let's go <i class="fas fa-arrow-circle-down"></i></a>
     </section>
 
-    <section class="flex flex-col items-center justify-center h-screen" id="tentang">
+    <section class="flex flex-col items-center justify-center h-screen bg-stone-100" id="tentang">
         <div class="head-content">
             <h1>Tentang <span>Saya</span></h1>
         </div>
@@ -59,7 +72,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center h-screen" id="kemampuan">
+    <section class="flex flex-col items-center justify-center h-screen bg-purple-600" id="kemampuan">
         <h1>Kemampuan <span>Saya</span></h1>
         <p>Kemampuan yang saya miliki yaitu makan dan tidur. Selain itu cuma aksesoris</p>
         <div class="skill-container">
@@ -70,7 +83,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center h-screen" id="proyek">
+    <section class="flex flex-col items-center justify-center h-screen bg-purple-600" id="proyek">
         <h1>Proyek</h1>
         <p>Hasil kegabutanku bisa dilihat disini</p>
     </section>
