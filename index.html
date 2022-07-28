@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +8,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio | Danang Satria</title>
 </head>
 
 <body>
     <nav>
-        <div class="header">
-            <div class="logo">
-                <img src="assets/img/logo.png" alt="">
+        <div class="flex items-center justify-between fixed bg-white w-full h-16 px-12">
+            <div class="py-2">
+                <img class="w-14 py-2" src="assets/img/logo.png" alt="">
             </div>
             <div class="navigation">
-                <ul>
-                    <li><a href="#beranda"><i class="fa-solid fa-house"></i> beranda</a></li>
-                    <li><a href="#tentang"><i class="fa-solid fa-user"></i> tentang</a></li>
-                    <li><a href="#kemampuan"><i class="fa-solid fa-code"></i> kemampuan</a></li>
-                    <li><a href="#proyek"><i class="fa-solid fa-diagram-project"></i> proyek</a></li>
+                <ul class="flex">
+                    <li class="mx-4"><a href="#beranda" class="text-xl font-medium"><i class="fa-solid fa-house"></i> beranda</a></li>
+                    <li class="mx-4"><a href="#tentang" class="text-xl font-medium"><i class="fa-solid fa-user"></i> tentang</a></li>
+                    <li class="mx-4"><a href="#kemampuan" class="text-xl font-medium"><i class="fa-solid fa-code"></i> kemampuan</a></li>
+                    <li class="mx-4"><a href="#proyek" class="text-xl font-medium"><i class="fa-solid fa-diagram-project"></i> proyek</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="home" id="beranda">
+    <section class="flex flex-col items-center justify-center h-screen" id="beranda">
         <h3>Halo pemirsa, saya</h3>
         <h1>Danang <span>Satria</span></h1>
         <p>Mahasiswa | Frontend Developer</p>
@@ -37,7 +37,7 @@
         <a href="#tentang" class="button">Let's go <i class="fas fa-arrow-circle-down"></i></a>
     </section>
 
-    <section class="about" id="tentang">
+    <section class="flex flex-col items-center justify-center h-screen" id="tentang">
         <div class="head-content">
             <h1>Tentang <span>Saya</span></h1>
         </div>
@@ -59,18 +59,18 @@
         </div>
     </section>
 
-    <section class="skill" id="kemampuan">
+    <section class="flex flex-col items-center justify-center h-screen" id="kemampuan">
         <h1>Kemampuan <span>Saya</span></h1>
         <p>Kemampuan yang saya miliki yaitu makan dan tidur. Selain itu cuma aksesoris</p>
         <div class="skill-container">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="icon-skill"><img src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt=""></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="icon-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt=""></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="icon-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt=""></a>
-            <a href="https://tailwindcss.com/" class="icon-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt=""></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class=""><img class="w-24" src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt=""></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="icon-skill"><img class="w-24" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt=""></a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="icon-skill"><img class="w-24" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt=""></a>
+            <a href="https://tailwindcss.com/" class="icon-skill"><img class="w-24" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt=""></a>
         </div>
     </section>
 
-    <section class="project" id="proyek">
+    <section class="flex flex-col items-center justify-center h-screen" id="proyek">
         <h1>Proyek</h1>
         <p>Hasil kegabutanku bisa dilihat disini</p>
     </section>
