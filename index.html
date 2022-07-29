@@ -4,20 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        open: ['Open Sans'],
+                        open: 'Open Sans',
                     },
                 }
             }
@@ -25,70 +21,34 @@
     </script>
     <title>Portfolio | Danang Satria</title>
 </head>
-<body class="font-open text-gray-700 overflow-hidden">
-    <nav>
-        <div class="flex items-center justify-between fixed bg-white w-full h-16 px-12">
-            <div class="py-2">
-                <img class="w-14 py-2" src="assets/img/logo.png" alt="">
-            </div>
-            <div class="navigation">
-                <ul class="flex">
-                    <li class="mx-4"><a href="#beranda" class="text-xl font-medium capitalize"><i class="fa-solid fa-house"></i> beranda</a></li>
-                    <li class="mx-4"><a href="#tentang" class="text-xl font-medium capitalize"><i class="fa-solid fa-user"></i> tentang</a></li>
-                    <li class="mx-4"><a href="#kemampuan" class="text-xl font-medium capitalize"><i class="fa-solid fa-code"></i> kemampuan</a></li>
-                    <li class="mx-4"><a href="#proyek" class="text-xl font-medium capitalize"><i class="fa-solid fa-diagram-project"></i> proyek</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section class="flex flex-col items-center justify-center h-screen bg-stone-100 text-gray-800" id="beranda">
-        <h3 class="text-2xl font-semibold">Halo pemirsa, saya</h3>
-        <h1 class="text-5xl font-extrabold">Danang <span class="text-yellow-400">Satria</span></h1>
-        <p class="text-base">Mahasiswa | Frontend Developer</p>
-        <p class="text-base">jangan pernah berhenti belajar karena ilmu tidak akan pernah ada habisnya</p>
-        <a href="#tentang" class="px-4 py-2 rounded-full mt-4 bg-purple-600 text-stone-100 font-semibold hover:bg-transparent hover:border-2 hover:border-purple-600 hover:text-purple-600 animate-bounce transi ease-in-out duration-300">Let's go <i class="fas fa-arrow-circle-down"></i></a>
-    </section>
-
-    <section class="flex flex-col items-center justify-start h-screen bg-stone-100 text-gray-800" id="tentang">
-        <div class="w-full mt-20">
-            <h1 class="text-4xl font-extrabold">Tentang <span class="text-purple-600">Saya</span></h1>
-        </div>
-        <div class="flex w-full">
-            <div class="w-1/2 mr-10">
-                <p>Perkenalkan nama saya <span>Danang Satria Utomo</span>, saya adalah seorang mahasiswa fisip yang sedang gabut dan mulai mencoba dunia percodingan ini adalah salah satu hasil belajar saya dari youtube dan sumber belajar lainnya</p>
-            </div>
-            <div class="w-1/2 ml-10">
-                <h1 class="text-2xl font-bold">Yuk bangun koneksi</h1>
-                <p>Follow sosial mediaku. Biar aku punya banyak follower.</p>
-                <div class="my-sosmed">
-                    <a href="#" class="icon-social"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" class="icon-social"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" class="icon-social"><i class="fa-solid fa-paper-plane"></i></a>
-                    <a href="#" class="icon-social"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" class="icon-social"><i class="fa-solid fa-envelope"></i></a>
-                </div>
+<body class="font-open text-stone-800 bg-stone-100">
+<!-- Home Section Start -->
+    <section id="home" class="pt-20 px-4">
+        <div class="container">
+            <div class="flex flex-col items-center justify-center">
+                    <h2 class="text-2xl font-bold">Halo permirsa, saya</h2>
+                    <h1 class="text-5xl font-extrabold">Danang <span class="text-yellow-400">Satria</span></h1>
+                    <h3 class="text-base mt-2">Mahasiswa & frontend Developer</h3>
+                    <p class="text-base text-center">Jangan pernah berhenti belajar karena ilmu pengetahuan tidak ada habisnya</p>
+                    <a href="#about" class="text-base font-bold bg-purple-600 text-stone-100 mt-4 py-3 px-8 rounded-full hover:bg-transparent hover:text-stone-800 hover:border-2 hover:border-purple-600 animate-bounce">Let's Go</a>
             </div>
         </div>
     </section>
+<!-- Home Section End -->
 
-    <section class="flex flex-col items-center justify-center h-screen bg-purple-600 text-stone-100" id="kemampuan">
-        <h1>Kemampuan <span>Saya</span></h1>
-        <p>Kemampuan yang saya miliki yaitu makan dan tidur. Selain itu cuma aksesoris</p>
-        <div class="skill-container">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class=""><img class="w-24" src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg" alt=""></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="icon-skill"><img class="w-24" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt=""></a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="icon-skill"><img class="w-24" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt=""></a>
-            <a href="https://tailwindcss.com/" class="icon-skill"><img class="w-24" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt=""></a>
-        </div>
-    </section>
+<!-- About Section Start -->
+<section id="about" class="pt-20 px-4">
+    
+</section>
+<!-- About Section End -->
 
-    <section class="flex flex-col items-center justify-center h-screen bg-purple-600 text-stone-100" id="proyek">
-        <h1>Proyek</h1>
-        <p>Hasil kegabutanku bisa dilihat disini</p>
-    </section>
+<!-- Skill Section Start -->
+<!-- Skill Section End -->
 
-    <a href="#beranda" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-    <script src="/assets/js/javascript.js"></script>
+<!-- Project Section Start -->
+<!-- Project Section End -->
+
+<!-- Footer Section Start -->
+<!-- Footer Section End -->
 </body>
 </html>
