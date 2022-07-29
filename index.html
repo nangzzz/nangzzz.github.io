@@ -17,7 +17,7 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        'open': ['Open Sans', sans-serif;],
+                        open: ['Open Sans'],
                     },
                 }
             }
@@ -25,7 +25,7 @@
     </script>
     <title>Portfolio | Danang Satria</title>
 </head>
-<body class="font-open">
+<body class="font-open text-gray-700 overflow-hidden">
     <nav>
         <div class="flex items-center justify-between fixed bg-white w-full h-16 px-12">
             <div class="py-2">
@@ -42,24 +42,24 @@
         </div>
     </nav>
 
-    <section class="flex flex-col items-center justify-center h-screen bg-stone-100" id="beranda">
-        <h3 class="text-2xl">Halo pemirsa, saya</h3>
-        <h1 class="text-5xl">Danang <span>Satria</span></h1>
+    <section class="flex flex-col items-center justify-center h-screen bg-stone-100 text-gray-800" id="beranda">
+        <h3 class="text-2xl font-semibold">Halo pemirsa, saya</h3>
+        <h1 class="text-5xl font-extrabold">Danang <span class="text-yellow-400">Satria</span></h1>
         <p class="text-base">Mahasiswa | Frontend Developer</p>
         <p class="text-base">jangan pernah berhenti belajar karena ilmu tidak akan pernah ada habisnya</p>
-        <a href="#tentang" class="px-4 py-8 bg-purple-600">Let's go <i class="fas fa-arrow-circle-down"></i></a>
+        <a href="#tentang" class="px-4 py-2 rounded-full mt-4 bg-purple-600 text-stone-100 font-semibold hover:bg-transparent hover:border-2 hover:border-purple-600 hover:text-purple-600 animate-bounce transi ease-in-out duration-300">Let's go <i class="fas fa-arrow-circle-down"></i></a>
     </section>
 
-    <section class="flex flex-col items-center justify-center h-screen bg-stone-100" id="tentang">
-        <div class="head-content">
-            <h1>Tentang <span>Saya</span></h1>
+    <section class="flex flex-col items-center justify-start h-screen bg-stone-100 text-gray-800" id="tentang">
+        <div class="w-full mt-20">
+            <h1 class="text-4xl font-extrabold">Tentang <span class="text-purple-600">Saya</span></h1>
         </div>
-        <div class="main-content">
-            <div class="top-content">
+        <div class="flex w-full">
+            <div class="w-1/2 mr-10">
                 <p>Perkenalkan nama saya <span>Danang Satria Utomo</span>, saya adalah seorang mahasiswa fisip yang sedang gabut dan mulai mencoba dunia percodingan ini adalah salah satu hasil belajar saya dari youtube dan sumber belajar lainnya</p>
             </div>
-            <div class="bottom-content">
-                <h1>Yuk bangun koneksi</h1>
+            <div class="w-1/2 ml-10">
+                <h1 class="text-2xl font-bold">Yuk bangun koneksi</h1>
                 <p>Follow sosial mediaku. Biar aku punya banyak follower.</p>
                 <div class="my-sosmed">
                     <a href="#" class="icon-social"><i class="fa-brands fa-instagram"></i></a>
@@ -72,7 +72,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center h-screen bg-purple-600" id="kemampuan">
+    <section class="flex flex-col items-center justify-center h-screen bg-purple-600 text-stone-100" id="kemampuan">
         <h1>Kemampuan <span>Saya</span></h1>
         <p>Kemampuan yang saya miliki yaitu makan dan tidur. Selain itu cuma aksesoris</p>
         <div class="skill-container">
@@ -83,7 +83,7 @@
         </div>
     </section>
 
-    <section class="flex flex-col items-center justify-center h-screen bg-purple-600" id="proyek">
+    <section class="flex flex-col items-center justify-center h-screen bg-purple-600 text-stone-100" id="proyek">
         <h1>Proyek</h1>
         <p>Hasil kegabutanku bisa dilihat disini</p>
     </section>
