@@ -6,25 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Portfolio | Danang Satria</title>
 </head>
 
 <body>
+    <!-- Header Section Start -->
+    <header class="flex items-center absolute top-0 left-0 w-full bg-transparent z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#" class="block font-extrabold text-2xl text-secondary py-4">Danang <span
+                            class="text-primary">Satria</span></a>
+                </div>
+                <div class="flex items-center px-4">
+                    <!-- Hamburger Section Start -->
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <!-- Hambuger Section End -->
+
+                    <!-- Navigation Section Start -->
+                    <nav id="nav-menu"
+                        class="hidden absolute py-4 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#"
+                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
+                                        class="material-symbols-outlined mr-1">cottage</span>Homepage</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
+                                        class="material-symbols-outlined mr-1">account_circle</span>Tentang
+                                    Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skill"
+                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
+                                        class="material-symbols-outlined mr-1">code</span>Kemampuanku</a>
+                            </li>
+                            <li class="group">
+                                <a href="#project"
+                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
+                                        class="material-symbols-outlined mr-1">insights</span>Hasil
+                                    Karyaku</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- Navigation Section End -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
     <!-- Home Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="color-secondary h-screen flex items-center justify-center">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4">
-                    <h1 class="text-base font-semibold">Halo Pemirsa, saya <span
-                            class="block font-black text-4xl">Danang
+                <div class="w-full self-center px-4 md:text-center lg:text-center">
+                    <h1 class="text-base font-semibold lg:text-xl color-primary">Halo Pemirsa, saya <span
+                            class="block font-black text-4xl md:text-5xl lg:text-6xl color-secondary">Danang
                             Satria</span></h1>
-                    <h2 class="text-base">Mahasiswa | Frontend Developer</h2>
-                    <p>jangan pernah berhenti belajar karena ilmu tidak akan pernah ada habisnya</p>
+                    <h2 class="text-base font-medium md:mt-2 lg:mt-3">Mahasiswa | Frontend Developer</h2>
+                    <p class="text-base font-medium">jangan pernah berhenti belajar karena
+                        ilmu tidak
+                        akan pernah ada
+                        habisnya</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- Home Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="h-screen color-secondary">
+        <div class="flex flex-col lg:flex-row px-4">
+            <div class="w-full lg:w-1/2">
+                <div class="aboutContainer">
+                    <h1 class="text-2xl font-bold">Tentang Saya</h1>
+                    <p>perkenalkan namaku Danang Satria Utomo aku adalah seorang mahasiswa fhisip yang saat ini sedang
+                        mulai belajar tentang dunia percodingan dan ini salah satu projectku dari hasil belajarku</p>
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div class="social-media-container">
+                    <h1 class="text-2xl font-bold">Sosial Mediaku</h1>
+                    <p>Mari berteman di sosial media</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Skill Section Start -->
+    <section id="skill" class="h-screen color-secondary">
+        <div class="flex px-4">
+            <div class="skill-container">
+                <h1 class="text-2xl font-bold">Kemampuanku</h1>
+                <p>selain tidur aku juga jago</p>
+                <div class="skill-icon">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skill Section End -->
+
+    <!-- Project Section Start -->
+    <section id="project" class="h-screen color-secondary">
+        <div class="flex px-4">
+            <div class="skill-container">
+                <h1 class="text-2xl font-bold">Hasil Karyaku</h1>
+                <p>Web hasil kegabutanku</p>
+                <div class="project-icon">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Project Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="assets/javascript.js"></script>
 </body>
 
 </html>
