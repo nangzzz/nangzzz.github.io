@@ -1,242 +1,102 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
 
+<link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png"> 
+<link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link rel="stylesheet" href="Src/style.css"><script src="https://unpkg.com/scrollreveal"></script>
+  
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <title>Portfolio | Danang Satria</title>
+<title>Minta PAP Dong</title>
+<meta name="description" content="@feelthisray - Script by Feeldream Repl Co">
 </head>
+<body>
+	
+   <div class="overlay">
+     <div class="loading-message">Hai kamu!<br>Tunggu dulu ya..<br><br>Ga lama kok 🥳</div>
+   </div>
 
-<body class="bg-third">
-    <!-- Header Section Start -->
-    <header class="flex items-center absolute top-0 left-0 w-full bg-transparent z-10">
-        <div class="container">
-            <div class="flex items-center justify-between relative">
-                <div class="px-4">
-                    <a href="#" class="block font-extrabold text-2xl md:text-3xl text-secondary py-4">Nang<span
-                            class="text-primary">zzz</span></a>
-                </div>
-                <div class="flex items-center px-4">
-                    <!-- Hamburger Section Start -->
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-                    <!-- Hambuger Section End -->
+   <audio src="audio.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <section class="first">
+       <div class="wp"><img src="Asset/1.jpg"/></div>
+       <img id="first_stiker" class="stiker fade-in" src="Asset/peachbunga2.gif"/>
+       <h1 class="title">Hai Manis! 😆❤️</h1>
+       <p class="flip">Aku ada sesuatu nih 🤭</p>
+       <p class="slide-up"><i>Scroll terus yaa! ✨</i></p>
+  </section>
+  
+  <section>
+      <div class="wp"><img src="Asset/2.jpg"/></div>
+      <img class="stiker fade-in" src="Asset/peachhoam.gif"/>
+      <h3 id="textsec2" class="anm title">Btw, Kamu Kok<br>Lucu Banget Sih 😆❤️</h3>
+      <h3 id="textsec2b" class="anm">Boleh Gak Aku Gigit? 🤣❤️</h3>
+      <div id="Tombol">
+       <a id="By" onClick="fungsimau()">Boleh</a>
+       <a id="Bn" onClick="btn='Bn';fungsibaru(btn)">Engga</a>
+     </div>
+     <!-- Pesan Ditolak -->
+     <div class="sembunyi">
+       <img id="stikerditolak" src="Asset/ywdh.gif"/>
+       <p id="kataditolak">Yaahh:( yaudah deh🙁</p>
+     </div>
+  </section>
+  
+  <section>
+  	<div class="wp"><img src="Asset/3.jpg"/></div>
+      <img id="stikerdouble" class="stiker stakhir fade-in" src="Asset/peachktw.gif"/>
+      <img id="stikerdouble2" class="stakhir" style="display:none" src="Asset/peach22.gif"/>
+      <h3 id="textsec3" class="anm title">Canda deh wkwk 🤣❤️</h3>
+      <h3 id="textsec3b" class="anm">Oh ya, Aku Punya<br>Pantun Nih Buat Kamu 🤭</h3>
+  </section>
+  
+  <section>
+  	<div class="wp"><img src="Asset/4.jpg"/></div>
+      <img id="stikerdua" class="stiker stakhir fade-in" src="Asset/peachsruput.gif"/>
+      <img id="stikerdua2" class="stakhir" style="display:none" src="Asset/peachktw2.gif"/>
+      <p id="teksnimasi">Anak kecil makannya lahap<br>Bisa ga siih aku minta PAP</p>
+    <div id="Tombol2">
+       <a id="By2" onClick="fungsimau2()">Boleh</a>
+       <a id="Bn2" onClick="btn='Bn2';fungsibaru(btn)">Engga</a>
+    </div>
+  </section>
+  
+  <section id="iniakhir">
+  	<div class="wp"><img src="Asset/5.jpg"/></div>
+      <img id="stikerakhir" class="stiker stakhir fade-in" src="Asset/peach1.gif"/>
+      <img id="stikerakhir2" class="stakhir" style="display:none" src="Asset/peachhoam.gif"/>
+      <h1 id="judulakhir">Yeayy! ✨</h1>
+      <p id="kalimatakhir">Tumben boleh nih, wkwk 🤣❤️</p>
+      <p id="palingakhir">Jangan lupa kirim PAP-nya<br>ke WhatsApp aku ya! 😋❤️</p>
+      <div id="TombolWA">
+       <a onClick="menuju()">Balas 💌</a>
+     </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
 
-                    <!-- Navigation Section Start -->
-                    <nav id="nav-menu"
-                        class="hidden absolute py-4 bg-third shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
-                        <ul class="block lg:flex">
-                            <li class="group">
-                                <a href="#"
-                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
-                                        class="material-symbols-outlined mr-1">cottage</span>Homepage</a>
-                            </li>
-                            <li class="group">
-                                <a href="#about"
-                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
-                                        class="material-symbols-outlined mr-1">account_circle</span>Tentang
-                                    Saya</a>
-                            </li>
-                            <li class="group">
-                                <a href="#skill"
-                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
-                                        class="material-symbols-outlined mr-1">code</span>Kemampuanku</a>
-                            </li>
-                            <li class="group">
-                                <a href="#project"
-                                    class="text-base color-secondary py-2 mx-8 flex group-hover:text-primary"><span
-                                        class="material-symbols-outlined mr-1">insights</span>Hasil
-                                    Karyaku</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- Navigation Section End -->
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header Section End -->
+  <style>
+    svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
+    .tomKirim{position: fixed;background-color: #4dc247;bottom: 30px;right: 30px;border-radius: 50px;z-index: 999;overflow: hidden;display: flex;align-items: center;justify-content: center;width: 45px;height: 45px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+    .tomKirim svg{margin: auto;fill: #fff} .tomKirim:hover{transform: scale(.8)}
+  </style>
+  <script></script>
+  
+  <a class='tomKirim' href='https://api.whatsapp.com/send?phone=&text=https%3A%2F%2Fs.id%2Fbukabentarya2'>
+    <svg class='svg-1' viewBox='0 0 32 32'><g><path d='M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z'></path><path d='M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z'></path></g></svg>
+  </a>
 
-    <!-- Home Section Start -->
-    <section id="home" class="text-secondary h-screen flex items-center justify-center">
-        <div class="container">
-            <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 md:text-center lg:text-center">
-                    <h1 class="text-base font-bold lg:text-xl color-primary">Halo Calon Jenazah <iconify-icon
-                            icon="line-md:github-loop"></iconify-icon>, saya <span
-                            class="block font-black text-4xl md:text-5xl lg:text-6xl color-secondary">Danang <span
-                                class="text-primary">Satria</span>
-                        </span>
-                    </h1>
-                    <h2 class="text-base md:text-lg lg:text-xl font-bold md:mt-2 lg:mt-3">Mahasiswa | Frontend Developer
-                    </h2>
-                    <p class="text-base md:text-lg lg:text-xl font-medium">Jangan pernah berhenti belajar karena
-                        ilmu tidak
-                        akan pernah ada
-                        habisnya</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Home Section End -->
-
-    <!-- About Section Start -->
-    <section id="about" class="h-screen text-secondary pt-16">
-        <div class="flex flex-col md:flex-row px-4">
-            <div class="w-full md:w-1/2">
-                <div class="aboutContainer">
-                    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold">Tentang <span
-                            class="text-primary">Saya</span>
-                    </h1>
-                    <p>perkenalkan namaku Danang Satria Utomo aku adalah seorang mahasiswa fhisip yang saat ini sedang
-                        mulai belajar tentang dunia percodingan dan ini salah satu projectku dari hasil belajarku</p>
-                </div>
-            </div>
-            <div class="w-full md:w-1/2 mt-8">
-                <div class="social-media-container">
-                    <h1 class="text-2xl font-bold">Sosial <span class="text-primary">Mediaku</span></h1>
-                    <p>Mari berteman di sosial media</p>
-                    <div class="flex items-center justify-around w-full">
-                        <a href="#">
-                            <iconify-icon icon="logos:instagram-icon" width="24" height="24">
-                            </iconify-icon>
-                        </a>
-                        <a href="#">
-                            <iconify-icon icon="logos:facebook" width="24" height="24"></iconify-icon>
-                        </a>
-                        <a href="#">
-                            <iconify-icon icon="logos:telegram" width="24" height="24"></iconify-icon>
-                        </a>
-                        <a href="#">
-                            <iconify-icon icon="logos:github-icon" width="24" height="24"></iconify-icon>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Skill Section Start -->
-    <section id="skill" class="h-screen text-secondary pt-16">
-        <div class="flex px-4 w-full justify-center">
-            <div class="skill-container">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center">Kemampuanku</h1>
-                <p class="text-center">selain tidur aku juga jago</p>
-                <div class="flex flex-wrap justify-center w-full mt-4">
-                    <a href="#">
-                        <iconify-icon icon="vscode-icons:file-type-html" width="96" height="96"></iconify-icon>
-                    </a>
-                    <a href="#">
-                        <iconify-icon icon="vscode-icons:file-type-css" width="96" height="96"></iconify-icon>
-                    </a>
-                    <a href="#">
-                        <iconify-icon icon="vscode-icons:file-type-js-official" width="96" height="96">
-                        </iconify-icon>
-                    </a>
-                    <a href="#">
-                        <iconify-icon icon="vscode-icons:file-type-tailwind" width="96" height="96"></iconify-icon>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Skill Section End -->
-
-    <!-- Project Section Start -->
-    <section id="project" class="h-screen text-secondary pt-16">
-        <div class="flex px-4 justify-center">
-            <div class="skill-container">
-                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-center">Hasil Karyaku</h1>
-                <p class="text-center">Web hasil kegabutanku</p>
-                <div class="flex flex-col justify-around w-full md:flex-row md:flex-wrap">
-                    <a href="#"
-                        class="flex flex-row items-center bg-white rounded-lg border shadow-md md:flex-col md:max-w-lg lg:max-w-xl md:rounded-t-lg my-2 md:mx-2"><img
-                            class="object-cover w-48 h-auto rounded-none rounded-l-lg md:rounded-none md:w-full md:h-96 md:rounded-t-lg"
-                            src=" https://picsum.photos/200" alt="">
-                        <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-secondary">project one</h5>
-                            <p class="mb-3 font-normal text-secondary">Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Earum eos ex dolorum facilis
-                                quisquam? Natus quos mollitia iure aliquam non?</p>
-                        </div>
-                    </a>
-
-                    <a href="#"
-                        class="flex flex-row items-center bg-white rounded-lg border shadow-md md:flex-col md:max-w-xl md:rounded-t-lg my-2 md:mx-2"><img
-                            class="object-cover w-48 h-auto rounded-none rounded-l-lg md:rounded-none md:w-full md:h-96 md:rounded-t-lg"
-                            src=" https://picsum.photos/200" alt="">
-                        <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-secondary">project one</h5>
-                            <p class="mb-3 font-normal text-secondary">Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Earum eos ex dolorum facilis
-                                quisquam? Natus quos mollitia iure aliquam non?</p>
-                        </div>
-                    </a>
-
-                    <a href="#"
-                        class="flex flex-row items-center bg-white rounded-lg border shadow-md md:flex-col md:max-w-xl md:rounded-t-lg my-2 md:mx-2"><img
-                            class="object-cover w-48 h-auto rounded-none rounded-l-lg md:rounded-none md:w-full md:h-96 md:rounded-t-lg"
-                            src=" https://picsum.photos/200" alt="">
-                        <div class="flex flex-col justify-between p-4 leading-normal">
-                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-secondary">project one</h5>
-                            <p class="mb-3 font-normal text-secondary">Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Earum eos ex dolorum facilis
-                                quisquam? Natus quos mollitia iure aliquam non?</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Project Section End -->
-
-    <!-- Footer Section Start -->
-    <footer class="flex items-center bg-secondary">
-        <div class="w-full flex items-center justify-between m-4">
-            <div class="footer-container">
-                <p class="text-white">dibuat pake 🧠 dan ❤️ oleh <a href="https://www.github.com/nangzzz">Danang
-                        Satria</a></p>
-            </div>
-            <div class="sosmed">
-                <div class="flex ">
-                    <p class="text-white font-bold">Social Media</p>
-                    <div class="sosmed-icon">
-                        <div class="flex justify-around">
-                            <a href="#">
-                                <iconify-icon icon="line-md:instagram" style="color: white;" width="24" height="24">
-                                </iconify-icon>
-                            </a>
-                            <a href="#">
-                                <iconify-icon icon="line-md:facebook" style="color: white;" width="24" height="24">
-                                </iconify-icon>
-                            </a>
-                            <a href="#">
-                                <iconify-icon icon="line-md:telegram" style="color: white;" width="24" height="24">
-                                </iconify-icon>
-                            </a>
-                            <a href="#">
-                                <iconify-icon icon="line-md:instagram" style="color: white;" width="24" height="24">
-                                </iconify-icon>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <script src=" assets/javascript.js">
-    </script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+<script>
+pesanwhatsapp = "Boleh nih, mau PAP? ><";
+  
+const body = document.querySelector("body"); const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="Src/script.js"></script>
 </body>
-
 </html>
