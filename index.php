@@ -12,7 +12,7 @@ teksHai = "Hai, ada surat buat kamu nih";
     
 konten = [
   {
-    gambar: "NamaFileGambar/Foto",
+    gambar: "Asset/peach1.gif",
     ucapan: "UcapanKalian",
   },
 ];
