@@ -50,15 +50,15 @@ if (isset($_GET['d'])) {
         ucapan: "UcapanKalian",
       },
       {
-        gambar: "Asset/peach1.gif",
+        gambar: "Asset/peach22.gif",
         ucapan: "UcapanKalian",
       },
       {
-        gambar: "Asset/peach1.gif",
+        gambar: "Asset/peachbunga2.gif",
         ucapan: "UcapanKalian",
       },
       {
-        gambar: "Asset/peach1.gif",
+        gambar: "Asset/peachktw.gif",
         ucapan: "UcapanKalian",
       },
 
