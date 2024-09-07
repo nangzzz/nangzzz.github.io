@@ -49,6 +49,19 @@ if (isset($_GET['d'])) {
         gambar: "Asset/peach1.gif",
         ucapan: "UcapanKalian",
       },
+      {
+        gambar: "Asset/peach1.gif",
+        ucapan: "UcapanKalian",
+      },
+      {
+        gambar: "Asset/peach1.gif",
+        ucapan: "UcapanKalian",
+      },
+      {
+        gambar: "Asset/peach1.gif",
+        ucapan: "UcapanKalian",
+      },
+
     ];
 
     musik = "musik.mp3";
